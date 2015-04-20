@@ -1,5 +1,27 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  nav(class="navbar navbar-inverse")
+    div(class="container")
+      div(class="navbar-header")
+        a(class="navbar-brand",href="#") CartoBuilder
+      div(id="navbar",class="navbar-collapse collapse")
+        ul(class="nav navbar-nav")
+          li
+            a(href="#") Cartes
+          li
+            a(href="#") Donn&eacute;es
+          li
+            a(href="#") Profil
+              
+  div(class="container-fluid")
+    table(class="table table-striped",ng-controller="MapListCtrl")
+      thead
+        tr
+          th Nom
+          th Description
+        tr(ng-repeat="map in maps")
+          td {{map.name}}
+          td {{map.desc}}
+
+  
