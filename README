@@ -1,0 +1,22 @@
+Généralités 
+===========
+
+Le site est basé sur les technologies suivantes:
+
+* bootstrap: génération de l'interface utilisateur HTML/prise en charge des clients mobiles.
+* angularjs: prise en charge de la logique applicative du client HTML.
+* nodeJS/ExpressJS: serveur d'application.
+
+bootstrap utilisant JQuery ce dernière librairie est un pré-requis.
+
+Orgranisation du projet
+=======================
+
+Le serveur d'application est ExpressJS et la structure du site est donc la suivante:
+
+*   public.
+**  images: ressources statiques de type images(png,jpeg,...).
+**  javascripts: ressources statiques de type javascript. Tous les scripts nécessaires à AngularJS se trouvent dans ce répertoire.
+**  stylesheets: CSS (normalement non utilisés car bootstrap réalise le travail).
+
+*   routes.
